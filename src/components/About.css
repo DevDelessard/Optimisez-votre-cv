@@ -1,0 +1,122 @@
+
+.about-section {
+  background-color: #f9f9f9;
+  padding: 3%;
+}
+
+.about-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  padding: 3%;
+  background-color: #f9f9f9;
+}
+
+
+.about-text {
+  flex: 1;
+  min-width: 250px;
+  padding: 10px;
+}
+
+.about-text h2 {
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 5px;
+}
+
+.about-text p {
+  margin-bottom: 10px;
+  line-height: 1.6;
+  font-size: 1.3rem;
+  
+}
+
+.about-text strong {
+  font-weight: bold;
+}
+
+.skills-section {
+  flex: 1;
+  min-width: 250px;
+  
+  padding: 15px;
+  border-radius: 10px;
+  
+}
+
+.skills-header {
+  display: flex;
+  
+  gap: 10px;
+  flex-direction: column;
+}
+
+.skills-header img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.skills-header h3 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.skill {
+  margin: 10px 0;
+}
+
+.skill span {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.skill-bar {
+  background-color: #e0e0e0;
+  border-radius: 5px;
+  overflow: hidden;
+  height: 15px;
+}
+
+.skill-level {
+  height: 100%;
+  border-radius: 5px;
+}
+
+
+.html {
+  width: 90%;
+  background-color: #e4263f;
+}
+
+.css {
+  width: 80%;
+  background-color: #61dafb;
+}
+
+.javascript {
+  width: 70%;
+  background-color: #f0db4f;
+}
+
+.php {
+  width: 60%;
+  background-color: #05720a;
+}
+
+.react {
+  width: 50%;
+  background-color: #2965f1
+}
+
+
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+  }
+}

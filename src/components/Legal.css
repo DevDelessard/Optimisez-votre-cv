@@ -1,0 +1,81 @@
+.legal-section {
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  background-color: #fff;
+}
+
+.legal-section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+  position: relative;
+}
+
+.legal-section h2::after {
+  content: '';
+  display: block;
+  width: 15%;
+  height: 3px;
+  background-color: #007bff;
+  margin: 10px auto;
+}
+
+.accordion {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.accordion-item {
+  border-bottom: 1px solid #ddd;
+}
+
+.accordion-title {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  font-size: 1.2rem;
+  background-color: #fff;
+  border-bottom: 1px solid #e0e0e0;
+  transition: background-color 0.3s ease;
+}
+
+.accordion-title:hover {
+  background-color: #f0f0f0;
+}
+
+.accordion-content {
+  padding: 15px;
+  background-color: #f9f9f9;
+  text-align: left;
+  font-size: 1rem;
+  color: #333;
+  
+  
+}
+
+.accordion-content h3{
+  text-align: left;
+  font-size: 2rem;
+  margin: 0;
+}
+
+.contact1 p {
+  margin: 10px 0; 
+  line-height: 1.4; 
+}
+.accordion-content a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.accordion-content a:hover {
+  text-decoration: underline;
+}
+
+.accordion-title span:last-child {
+  font-size: 1.1rem;
+}
