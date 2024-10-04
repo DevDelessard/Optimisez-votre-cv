@@ -121,7 +121,7 @@
 @media (max-width: 1024px) and (min-width: 768px) {
   .footer-container {
     display: flex;
-    justify-content: space-between; /* Maintenir l'espacement entre les éléments */
+    justify-content: space-between; 
     flex-wrap: wrap;
   }
 
@@ -129,7 +129,7 @@
   .footer-links,
   .footer-projects,
   .footer-articles {
-    flex: 1 1 45%; /* Chaque section prend environ 45% de la largeur pour 2 colonnes */
+    flex: 1 1 45%; 
     margin: 10px;
   }
 
@@ -146,6 +146,29 @@
   .footer-socials {
     justify-content: flex-start;
   }
+}
+.scroll-to-top {
+  position: relative;
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 50px;
+  text-align: center;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.4s ease; 
+}
+
+
+.scroll-to-top.visible {
+  opacity: 1; 
+  display: inline-block;
+}
+
+.scroll-to-top:hover {
+  background-color: #298eff; 
+  color: #fff; 
+  transition: background-color 0.3s ease; 
 }
 
 

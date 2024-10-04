@@ -1,10 +1,36 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './Footer.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
+import { faChevronRight, faChevronUp } from '@fortawesome/free-solid-svg-icons';
 import { faGithub, faTwitter, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
+
 const Footer = () => {
+  const [showScroll, setShowScroll] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setShowScroll(true);  
+      } else {
+        setShowScroll(false); 
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll); 
+    };
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
+  };
+
   return (
     <footer className="footer">
       <div className="footer-container">
@@ -87,7 +113,8 @@ const Footer = () => {
         </div>
       </div>
       <div className="footer-bottom">
-        <p>© Designed by John Doe</p>
+        <p>© 2024 Designed by John Doe</p>
+        <a href="#" className={`scroll-to-top ${showScroll ? 'visible' : ''}`}  id="scrollToTopLink" onClick={scrollToTop}><FontAwesomeIcon icon={faChevronUp} />&nbsp;Retour en haut</a>
       </div>
     </footer>
   );

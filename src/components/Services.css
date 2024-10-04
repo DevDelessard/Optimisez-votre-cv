@@ -23,7 +23,6 @@
   color: #666;
 }
 
-/* Grid layout for services */
 .services-grid {
   display: flex;
   justify-content: space-between;
@@ -32,7 +31,6 @@
   margin-top: 50px;
 }
 
-/* Styles for each service card */
 .service-card {
   background-color: #fff;
   border-radius: 10px;
@@ -45,6 +43,7 @@
 
 .service-card:hover {
   transform: translateY(-10px);
+  background-color: #cde1f8;
 }
 
 .service-icon {
@@ -64,7 +63,6 @@
   color: #666;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
   .services-grid {
     flex-direction: column;
@@ -78,7 +76,6 @@
   }
 }
 
-/* Ligne bleue sous le titre */
 .services-section .txt:after {
   content: '';
   display: block;

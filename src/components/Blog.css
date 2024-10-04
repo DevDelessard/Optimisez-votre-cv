@@ -48,7 +48,7 @@
   flex-wrap: wrap;
   gap: 20px;
   justify-content: space-between;
-  justify-content: center; /* Centrer les cartes */
+  justify-content: center;
   
 }
 
@@ -64,7 +64,7 @@
   flex-direction: column;
   height: 100%;
   min-width: 300px;
-  margin-bottom: 20px; /* Espace entre les articles en ligne */
+  margin-bottom: 20px; 
 }
 
 .blog-card:hover {
@@ -139,7 +139,7 @@
   
 }
 
-/* Responsive Design */
+
 @media (max-width: 768px) {
   .blog-grid {
     flex-direction: column;
@@ -154,11 +154,11 @@
 
 @media (max-width: 1024px) and (min-width: 768px) {
   .blog-grid {
-    gap: 20px; /* Réduction de l'espacement entre les cartes */
+    gap: 20px; 
   }
 
   .blog-card {
-    flex: 1 1 45%; /* Chaque carte prend environ 45% de l'espace pour deux colonnes */
-    margin-bottom: 15px; /* Réduire également l'espace en bas */
+    flex: 1 1 45%; 
+    margin-bottom: 15px; 
   }
 }
